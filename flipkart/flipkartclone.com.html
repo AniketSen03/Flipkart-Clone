@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <mea charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>flipkart clone</title>
+</head>
+<style>
+        .container {
+                min-height: calc(100vh - 50px - 6vh);
+        }
+
+        * {
+                margin: 0;
+                padding: 0;
+        }
+
+        header {
+                background-color: #2874f0;
+                height: 50px;
+                padding: 15px;
+                color: white;
+        }
+
+        .hg {
+                display: inline-flex;
+        }
+
+        a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+        }
+
+        li {
+                display: inline;
+                padding: 4px;
+                border-right: 2px solid white;
+                justify-content: center;
+        }
+
+        a:hover {
+                color: white;
+                opacity: 0.8;
+        }
+
+        .search {
+                color: rgb(145, 145, 145);
+                float: right;
+                margin-left: 4px;
+                border-radius: 41px;
+                border: transparent;
+                padding: 2px 23px;
+        }
+
+        .button {
+                background-color: transparent;
+                color: white;
+                border-radius: 7px;
+                height: 19px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 2px solid white;
+                width: 60px;
+                float: right;
+                right: 2px;
+                cursor: pointer;
+                padding: 0px 0px 2px 0px;
+        }
+
+        .sbox {
+                margin-top: -21px;
+                margin-right: 70px;
+        }
+
+        .slider {
+                width: 1346px;
+        }
+
+        .bg {
+                background-color: #8080805c;
+                ;
+                height: 3870px;
+                margin: 5px 23px 0px 23px;
+        }
+
+        .h1 {
+                padding: 15px 29px;
+                font-family: math;
+        }
+
+        .item1 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .item2 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .item3 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .item4 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .item5 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .item6 {
+                display: inline-flex;
+                float: left;
+                height: 250px;
+                padding: 30px;
+                width: 180px;
+        }
+
+        .section1 {
+                float: left;
+                padding-top: 40px;
+        }
+
+        .section2 {
+                float: left;
+                padding-top: 40px;
+
+        }
+
+        .section3 {
+                float: left;
+                padding-top: 40px;
+
+        }
+
+        .section4 {
+                float: left;
+                padding-top: 40px;
+
+        }
+
+        .section5 {
+                float: left;
+                padding-top: 40px;
+
+        }
+
+        .section6 {
+                float: left;
+                padding-top: 40px;
+
+        }
+
+        .text {
+                text-align: center;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                color: grey;
+        }
+
+        .name {
+                text-align: center;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                color: grey;
+        }
+
+        .cut {
+                text-align: center;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 400;
+                display: inline-flex;
+                padding-left: 11px;
+                text-decoration: line-through;
+                color: grey;
+        }
+
+
+        .price {
+                text-align: center;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                display: inline-flex;
+                padding-left: 5px;
+        }
+
+        .discount {
+                display: inline-flex;
+                color: rgb(5, 143, 5);
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 20px;
+                padding-left: 5px;
+        }
+
+        footer {
+                background-color: #2874f0;
+                text-align: center;
+                color: white;
+                padding: 185px;
+                height: 6vh;
+                margin-top: 6px;
+                position: relative;
+        }
+
+        .copyright {
+                position: absolute;
+                top: 21px;
+                left: 573px;
+        }
+
+        .footeritems {
+                font-size: 17px;
+                color: #9d9797;
+                display: inline-flex;
+                border-right: 2px solid grey;
+                padding-right: 9px;
+                line-height: 30px;
+        }
+
+        .products {
+                margin-top: -115px;
+                text-align: center;
+        }
+
+        .item1 :hover {
+                color: #252121;
+        }
+
+        .item2 :hover {
+
+                color: #252121;
+        }
+
+        .item3 :hover {
+
+                color: #252121;
+        }
+
+        .item4 :hover {
+
+                color: #252121;
+        }
+
+        .item5 :hover {
+
+                color: #252121;
+        }
+
+        .item6 :hover {
+
+                color: #252121;
+        }
+</style>
+
+<body>
+        <header>
+                <nav> <img src="C:\Users\lucky\Desktop\vs code project\flipkart.png" alt="" width="100px" class="logo">
+                </nav>
+                <div class="hg">
+                        <nav>
+                                <ul>
+                                        <li><a href="home.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                        </nav>
+                </div>
+                <button class="button">search</button>
+                <div class="sbox"><input type="search box" value=""
+                                placeholder="Fashion,Electronic,Decoration,Furniture etc." class="search">
+                </div>
+        </header>
+        <div>
+                <img src="
+        C:\Users\lucky\Desktop\vs code project\flipkart\0000555.jpeg" class="slider">
+        </div>
+        <main>
+                <div class="bg">
+
+                        <!-- men  collection -->
+
+                        <div class="section1">
+                                <h1 class="h1">Men Collection</h1>
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\xl-hlsh014440-highlander-original-imagngn8ycd8wz2k.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+
+                                        </div>
+                                </div>
+
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\xxl-frml-st2-vebnor-original-imag6at47gkwze4m.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\l-towel-003-tallwalker-original-imaghf7zjrthdtkh.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\l-frml-st2-vebnor-original-imag6apmphuh2ayu.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\john_players_jeans_grey_heavily_washed_skinny_jeans.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item1">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\6f76fec4d07f48c9a655080998147501.jpg"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- women collection -->
+
+                        <div class="section2">
+                                <h1 class="h1"> Women Collection</h1>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\free-sequnce-embroidered-design-db-anghan-unstitched-original-imagz4vjq7fjh3gc.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\xxl-festive-15407owht-biba-original-imafy6mzevbvrasy.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\s-nmp-try-this-original-imag5xe3sdhgg8sg.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\medium-embroidered-daily-wear-art-silk-saree-maroon-angelarts-original-imag5ccj7yfkpv5b.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div><img src="C:\Users\lucky\Desktop\vs code project\flipkart\m-2co-w-regular-must-blk-young-trendz-original-imagadhfgte57e67.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\free-short-sleeve-sochncugc5604-soch-original-imaghy7nebe4jzhn.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\free-new-design-45-fabrexa-unstitched-original-imagcf9vczqrggy7.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\free-chainlacesaree-qvidya-unstitched-original-imag4nzsz27v6pk3.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\free-bb-2054-a-being-banarasi-unstitched-original-imagfyceywggzfhf.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+
+                                </div>
+                                <div class="item2">
+                                        <div>
+                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\xl-3502mintblue-juniper-original-imagp3gsvpqxzcaf.webp"
+                                                        height="250px" width="180px">
+                                                <p class="name">men check shirt </p>
+                                                <p class="cut">400</p>
+                                                <p class="price">₹315</p>
+                                                <p class="discount">58% off</p>
+                                        </div>
+                                </div>
+
+                                <!-- Furniture -->
+
+                                <div class="section3">
+                                        <h1 class="h1">Furniture</h1>
+
+                                        <div class="item3">
+                                                <div>
+                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imag9r2y3n6jzfrz.webp"
+                                                                height="250px" width="180px">
+                                                        <p class="name">men check shirt </p>
+                                                        <p class="cut">400</p>
+                                                        <p class="price">₹315</p>
+                                                        <p class="discount">58% off</p>
+                                                </div>
+                                        </div>
+
+                                        <div class="item3">
+                                                <div>
+                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imagfhzfuncdh5ym.webp"
+                                                                height="250px" width="180px">
+                                                        <p class="name">men check shirt </p>
+                                                        <p class="cut">400</p>
+                                                        <p class="price">₹315</p>
+                                                        <p class="discount">58% off</p>
+                                                </div>
+
+                                        </div>
+                                        <div class="item3">
+                                                <div>
+                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\queen-203-4-na-no-159-5-particle-board-no-49-bed-2-flipkart-original-imagfxa5zsrtyzyd.webp"
+                                                                height="250px" width="180px">
+                                                        <p class="name">men check shirt </p>
+                                                        <p class="cut">400</p>
+                                                        <p class="price">₹315</p>
+                                                        <p class="discount">58% off</p>
+                                                </div>
+
+                                        </div>
+                                        <div class="item3">
+                                                <div>
+                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\rr21t2h2wcu-hl-5-samsung-original-imafnmkbyzev8szv.webp"
+                                                                height="250px" width="180px">
+                                                        <p class="name">men check shirt </p>
+                                                        <p class="cut">400</p>
+                                                        <p class="price">₹315</p>
+                                                        <p class="discount">58% off</p>
+                                                </div>
+
+                                        </div>
+                                        <div class="item3">
+                                                <div>
+                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\symmetrical-89-ember-orange-84-polyester-no-29-8-bae-sleepyhead-original-imaggd69ayymm7fz.webp"
+                                                                height="250px" width="180px">
+                                                        <p class="name">men check shirt </p>
+                                                        <p class="cut">400</p>
+                                                        <p class="price">₹315</p>
+                                                        <p class="discount">58% off</p>
+                                                </div>
+                                        </div>
+
+                                        <!-- Electronics Appliances  -->
+
+                                        <div class="section4">
+                                                <h1 class="h1">Electronics Appliances</h1>
+
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imag95yfawvtzbdw.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imagedm8qgrzh6fb.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imagdznhcbdfwfud.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imaggbtuwq32w4et.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imaggg5rj8sdgzse.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\40y1-40fa1a00-oneplus-original-imag3p45tdgyvpqa.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\55up7720pty-55up7720pty-lg-original-imag4q3ysrnhq3z4.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\apple-iphone-se-mxvv2hn-a-original-imafrcqmfh4zznmq.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\f19-pro-5g-cph2213-oppo-original-imagfz397gzbjxtb.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\rr21t2h2wcu-hl-5-samsung-original-imafnmkbyzev8szv.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+                                                <div class="item4">
+                                                        <div>
+                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\sport-9a-redmi-original-imag7chxqqu7h5hs.webp"
+                                                                        height="250px" width="180px">
+                                                                <p class="name">men check shirt </p>
+                                                                <p class="cut">400</p>
+                                                                <p class="price">₹315</p>
+                                                                <p class="discount">58% off</p>
+                                                        </div>
+                                                </div>
+
+                                                <!--Toys  -->
+
+                                                <div class="section5">
+                                                        <h1 class="h1">Toys</h1>
+
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\tpzh01-3-grow-star-plus-original-imagfwe4jba5gru8.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\fat-tyre-cycle-for-men-with-dual-disc-brake-front-suspension-26-original-imagczhrw4uzhx3g.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\700-size-5-5-na-ceat-original-imaestuqrtzgfsng.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\400-22-country-colour-england-5-1-1360eg-football-nivia-original-imafyg5xrfngumde.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\-original-imagfxd6ngmymg65.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="item5">
+                                                                <div>
+                                                                        <img src="C:\Users\lucky\Desktop\vs code project\flipkart\g3-8-89-cm-excellent-badminton-racket-set-of-2-strung-2-90-95-original-imagc3zydgdxb8gh.webp"
+                                                                                height="250px" width="180px">
+                                                                        <p class="name">men check shirt </p>
+                                                                        <p class="cut">400</p>
+                                                                        <p class="price">₹315</p>
+                                                                        <p class="discount">58% off</p>
+                                                                </div>
+                                                        </div>
+
+                                                        <!--Toys  -->
+
+                                                        <div class="section6">
+                                                                <h1 class="h1">Kid Collection</h1>
+
+                                                                <div class="item6">
+                                                                        <div>
+                                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\5-6-years-klraw21tee017-killer-original-imaggumqtyycgfdk.webp"
+                                                                                        height="250px" width="180px">
+                                                                                <p class="name">men check shirt </p>
+                                                                                <p class="cut">400</p>
+                                                                                <p class="price">₹315</p>
+                                                                                <p class="discount">58% off</p>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="item6">
+                                                                        <div>
+                                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\7-8-years-bmrbz31-nvbz27-wmbz40-ylbz23-lorrnboybz44-blive-original-imagejj8wg22k4z2-bb.webp"
+                                                                                        height="250px" width="180px">
+                                                                                <p class="name">men check shirt </p>
+                                                                                <p class="cut">400</p>
+                                                                                <p class="price">₹315</p>
+                                                                                <p class="discount">58% off</p>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="item6">
+                                                                        <div>
+                                                                                <img src="C:\Users\lucky\Desktop\vs code project\flipkart\15-16-years-blorbz44-wmbz31-rdrnboybz24-blive-original-imagey7heqg25j7w-bb.webp"
+                                                                                        height="250px" width="180px">
+                                                                                <p class="name">men check shirt </p>
+                                                                                <p class="cut">400</p>
+                                                                                <p class="price">₹315</p>
+                                                                                <p class="discount">58% off</p>
+                                                                        </div>
+                                                                </div>
+
+
+        </main>
+
+        <!-- footer -->
+
+        <footer>
+                <div class="copyright">Copyright &copy; flipkart.com</div>
+
+                <div class="products">
+                        <div class="footeritems">men kurtas</div>
+                        <div class="footeritems">women kurtas</div>
+                        <div class="footeritems">kids shirts</div>
+                        <div class="footeritems">kids t-shirts</div>
+                        <div class="footeritems">men undergarments</div>
+                        <div class="footeritems">women undergarments</div>
+                        <div class="footeritems">Toys</div>
+                        <div class="footeritems">Furniture</div>
+                        <div class="footeritems">mobile/phones</div>
+                        <div class="footeritems">stationary</div>
+                        <div class="footeritems">books</div>
+                        <div class="footeritems">circket kits</div>
+                        <div class="footeritems">raincoats</div>
+                        <div class="footeritems">geroarcy</div>
+                        <div class="footeritems">idols</div>
+                        <div class="footeritems">incense stick</div>
+                        <div class="footeritems">dinning table</div>
+                        <div class="footeritems">caps</div>
+                        <div class="footeritems">men coats</div>
+                        <div class="footeritems">woolen sweaters</div>
+                        <div class="footeritems">men trousers</div>
+                        <div class="footeritems">makeup - kits</div>
+                        <div class="footeritems">bicycle</div>
+                        <div class="footeritems">medicines</div>
+                        <div class="footeritems">cold drinks</div>
+                        <div class="footeritems">bevages</div>
+                        <div class="footeritems">carpets</div>
+                        <div class="footeritems">exhaust fans</div>
+                        <div class="footeritems">fans</div>
+                        <div class="footeritems">umerbella</div>
+                        <div class="footeritems">men t-shirts</div>
+                        <div class="footeritems">wedding lehangas</div>
+                        <div class="footeritems">sherwaani</div>
+                        <div class="footeritems">girls folk</div>
+                        <div class="footeritems">videogames</div>
+                        <div class="footeritems">laptops</div>
+                        <div class="footeritems">beds</div>
+                        <div class="footeritems">tools</div>
+                        <div class="footeritems">men kurtas</div>
+                        <div class="footeritems">women kurtas</div>
+                        <div class="footeritems">kids shirts</div>
+                        <div class="footeritems">kids t-shirts</div>
+                        <div class="footeritems">men undergarments</div>
+                        <div class="footeritems">women undergarments</div>
+                        <div class="footeritems">Toys</div>
+                        <div class="footeritems">Furniture</div>
+                        <div class="footeritems">mobile/phones</div>
+                        <div class="footeritems">stationary</div>
+                        <div class="footeritems">books</div>
+                        <div class="footeritems">circket kits</div>
+                        <div class="footeritems">raincoats</div>
+                        <div class="footeritems">geroarcy</div>
+                        <div class="footeritems">idols</div>
+                        <div class="footeritems">incense stick</div>
+                        <div class="footeritems">dinning table</div>
+                        <div class="footeritems">caps</div>
+                        <div class="footeritems">men coats</div>
+                        <div class="footeritems">woolen sweaters</div>
+                        <div class="footeritems">men trousers</div>
+                        <div class="footeritems">makeup - kits</div>
+                        <div class="footeritems">bicycle</div>
+                        <div class="footeritems">medicines</div>
+                        <div class="footeritems">cold drinks</div>
+                        <div class="footeritems">bevages</div>
+                        <div class="footeritems">carpets</div>
+                        <div class="footeritems">exhaust fans</div>
+                        <div class="footeritems">fans</div>
+                        <div class="footeritems">umerbella</div>
+                        <div class="footeritems">men t-shirts</div>
+                        <div class="footeritems">wedding lehangas</div>
+                        <div class="footeritems">sherwaani</div>
+                        <div class="footeritems">girls folk</div>
+                        <div class="footeritems">videogames</div>
+                        <div class="footeritems">laptops</div>
+                        <div class="footeritems">beds</div>
+                        <div class="footeritems">tools</div>
+
+
+        </footer>
+</body>
+
+</html>
